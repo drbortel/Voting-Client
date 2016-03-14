@@ -5,7 +5,11 @@ export default React.createClass({
   mixins: [PureRenderMixin],
   render: function() {
     return <div className="winner">
-      Winner is {this.props.winner}!
+      Winner is {this.props.winner}!<br/><br/>
+      <button ref="restart"
+            onClick={this.props.restart}>
+        Restart
+      </button>
     </div>;
   }
 });
